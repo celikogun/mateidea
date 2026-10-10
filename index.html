@@ -50,13 +50,12 @@ p{margin:0}
 
 /* wordmark */
 .logo{font-family:var(--sans);font-weight:500;letter-spacing:-.02em;display:inline-flex;align-items:baseline;text-decoration:none;line-height:1}
-.logo .a{position:relative;display:inline-block}
-.logo .a svg{position:absolute;left:8%;top:22%;width:78%;height:auto;overflow:visible}
+.logo .mark{display:block;height:2.1rem;width:auto;color:var(--on-navy)}
 
 /* header */
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--navy);color:var(--on-navy);border-bottom:1px solid rgba(255,255,255,.08)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
-.nav .logo{font-size:1.9rem}
+.nav .logo{display:block}
 .nav ul{display:flex;gap:clamp(14px,2.6vw,32px);list-style:none;margin:0;padding:0;font-size:.95rem}
 .nav ul a{text-decoration:none;color:var(--on-navy-muted)}
 .nav ul a:hover{color:var(--on-navy)}
@@ -178,7 +177,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
 <header class="top">
   <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="MATE Education home">m<span class="a">a<svg viewBox="0 0 20 16" aria-hidden="true"><path d="M2 8.5 7.5 13 18 2" fill="none" stroke="#6B9675" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>te</a>
+    <a class="logo" href="#top" aria-label="MATE Education home"><svg class="mark" viewBox="0 0 228 80" role="img" aria-label="mate"><g fill="none" stroke="currentColor" stroke-width="9"><path d="M9 70V25M9 41a14 14 0 0 1 28 0V70M37 41a14 14 0 0 1 28 0V70"/><circle cx="100" cy="47.5" r="20"/><path d="M120 25V70"/><path d="M150 12V58a12 12 0 0 0 12 12h5M140 30h24"/><path d="M178 47.5h40a20 20 0 1 0-5.9 14.1"/></g><path d="M90 47l8 8.5 15-17" fill="none" stroke="#6B9675" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     <ul>
       <li><a href="#services">Services</a></li>
       <li><a href="#approach">Approach</a></li>
@@ -329,12 +328,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
   <section class="block process" id="about">
     <div class="wrap founder">
-      <img class="portrait" src="merveselcuk.jpeg" alt="Dr. Merve Selçuk, founder of MATE Education" style="object-fit:cover;padding:0;border:0;width:100%;">
+      <img class="portrait" src="drmerveselcuk.jpg" alt="Dr. Merve Selçuk, founder of MATE Education" style="aspect-ratio:auto;height:auto;width:100%;object-fit:contain;padding:0;border:0;">
       <div>
-        <p class="eyebrow">The mind behind MATE</p>
-        <p class="name" style="margin-top:22px">Dr. Merve<br><span class="green">Selçuk</span></p>
+        <p class="name">Dr. Merve<br><span class="green">Selçuk</span></p>
         <p class="role">Founder, MATE Education</p>
-        <p class="bio">Merve Selçuk founded MATE to help institutions move beyond one-off tests towards assessment systems they can trust. Her work covers language assessment, writing assessment and rubric design, test specification and item quality. Add a short professional bio here: degrees, years in language testing, and the institutions she has worked with.</p>
+        <p class="bio">Merve founded MATE to help institutions move beyond one-off tests towards assessment systems they can trust. Her work covers language assessment, writing assessment and rubric design, test specification and item quality. Add a short professional bio here: degrees, years in language testing, and the institutions she has worked with.</p>
         <div class="spines" aria-hidden="true"><span>Language Assessment</span><span>Testing in Practice</span><span>Assessment Systems</span></div>
       </div>
     </div>
